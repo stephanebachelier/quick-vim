@@ -32,7 +32,7 @@ set sw=2
 map <leader>n :NERDTreeToggle<CR>
 
 " ctrl f for jsbeautify
-let g:jsbeautify = {"indent_size": 4, "indent_char": "\t"}
+let g:jsbeautify = {"indent_size": 2, "indent_char": "\t"}
 let g:jsbeautify_engine = "node"
 map <c-f> :call JsBeautify()<cr>
 
