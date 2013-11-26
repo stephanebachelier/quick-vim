@@ -41,3 +41,20 @@ au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
 " no need to fold things in markdown all the time
 let g:vim_markdown_folding_disabled = 1
+
+" Trailing whitespace
+set list lcs=tab:·⁖,trail:¶
+
+match ErrorMsg '\s\+$'
+
+" Removes trailing spaces
+function! TrimWhiteSpace()
+  %s/\s\+$//e
+endfunction
+
+nnoremap <silent> <Leader>rts :call TrimWhiteSpace()<CR>
+
+autocmd FileType python,coffee,javascript autocmd FileWritePre    * :call TrimWhiteSpace()
+autocmd FileType python,coffee,javascript autocmd FileAppendPre   * :call TrimWhiteSpace()
+autocmd FileType python,coffee,javascript autocmd FilterWritePre  * :call TrimWhiteSpace()
+autocmd FileType python,coffee,javascript autocmd BufWritePre     * :call TrimWhiteSpace()
