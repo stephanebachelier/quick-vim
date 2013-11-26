@@ -21,7 +21,7 @@ colorscheme solarized
 set visualbell t_vb=
 
 " turn OFF line numbers
-" set nonumber ...I go back and forth on this one
+set number " ...I go back and forth on this one
 
 " 2 space softabs default
 set expandtab
