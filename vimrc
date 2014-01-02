@@ -58,3 +58,6 @@ autocmd FileType python,coffee,javascript autocmd FileWritePre    * :call TrimWh
 autocmd FileType python,coffee,javascript autocmd FileAppendPre   * :call TrimWhiteSpace()
 autocmd FileType python,coffee,javascript autocmd FilterWritePre  * :call TrimWhiteSpace()
 autocmd FileType python,coffee,javascript autocmd BufWritePre     * :call TrimWhiteSpace()
+
+" syntax highlight for .md file
+au BufRead,BufNewFile *.md set filetype=markdown
