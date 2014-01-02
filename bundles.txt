@@ -14,3 +14,4 @@ https://github.com/brianleroux/vim-jsbeautify.git
 https://github.com/kien/ctrlp.vim.git
 https://github.com/rizzatti/funcoo.vim.git
 https://github.com/rizzatti/dash.vim.git
+https://github.com/walm/jshint.vim
