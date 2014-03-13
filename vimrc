@@ -1,3 +1,6 @@
+scriptencoding utf-8
+set encoding=utf-8
+
 call pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -43,7 +46,7 @@ au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 let g:vim_markdown_folding_disabled = 1
 
 " Trailing whitespace
-set list lcs=tab:·⁖,trail:¶
+set list listchars=tab:»·,trail:¶,eol:$,extends:>,precedes:<
 
 match ErrorMsg '\s\+$'
 
