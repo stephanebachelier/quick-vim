@@ -15,8 +15,8 @@ set mouse=a
 " syntax highligting
 syntax enable
 set background=dark
-let g:solarized_termcolors=256
-set t_Co=16 " added for chromeos crosh chroot ubuntu
+"let g:solarized_termcolors=256
+"set t_Co=16 " added for chromeos crosh chroot ubuntu
 colorscheme solarized
 
 
@@ -64,3 +64,5 @@ autocmd FileType python,coffee,javascript autocmd BufWritePre     * :call TrimWh
 
 " syntax highlight for .md file
 au BufRead,BufNewFile *.md set filetype=markdown
+
+let g:Powerline_symbols = 'fancy'
