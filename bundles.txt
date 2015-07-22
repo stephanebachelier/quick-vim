@@ -16,3 +16,4 @@ https://github.com/rizzatti/funcoo.vim.git
 https://github.com/rizzatti/dash.vim.git
 https://github.com/walm/jshint.vim.git
 https://github.com/Lokaltog/vim-powerline.git
+https://github.com/mxw/vim-jsx.git

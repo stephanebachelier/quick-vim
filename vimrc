@@ -66,3 +66,7 @@ autocmd FileType python,coffee,javascript autocmd BufWritePre     * :call TrimWh
 au BufRead,BufNewFile *.md set filetype=markdown
 
 let g:Powerline_symbols = 'fancy'
+
+" React JSX support
+" See https://github.com/mxw/vim-jsx
+let g:jsx_ext_required = 0
