@@ -66,6 +66,15 @@ autocmd FileType python,coffee,javascript autocmd BufWritePre     * :call TrimWh
 au BufRead,BufNewFile *.md set filetype=markdown
 
 let g:Powerline_symbols = 'fancy'
+" this should be used only if awesome terminal fonts
+" https://github.com/gabrielelana/awesome-terminal-fonts/tree/patching-strategy
+let g:Powerline_dividers_override = [[0xe0b0], [0xe0b1], [0xe0b2], [0xe0b3]]
+let g:Powerline_symbols_override = {
+  \ 'BRANCH': [0xe238],
+  \ 'RO'    : [0xe0a2],
+  \ 'FT'    : [0xe1f6],
+  \ 'LINE'  : [0xe0a1],
+\ }
 
 " React JSX support
 " See https://github.com/mxw/vim-jsx
